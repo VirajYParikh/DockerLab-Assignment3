@@ -4,6 +4,9 @@ From: python:3.7.4
 %labels
     MAINTAINER Viraj Parikh virajypparikh@gmail.com
 
+%files
+    mnist/
+
 %post
     pip install --upgrade pip
     pip install -r /mnt/mnist/requirements.txt
