@@ -5,10 +5,8 @@ From: python:3.7.4
     MAINTAINER Viraj Parikh virajypparikh@gmail.com
 
 %post
-    apt-get update && apt-get install -y git
-    git clone https://github.com/VirajYParikh/DockerLab-Assignment3.git /mnt/your-repo
     pip install --upgrade pip
-    pip install -r /mnt/your-repo/requirements.txt
+    pip install -r requirements.txt
 
 %runscript
-    python /mnt/your-repo/main.py
+    python main.py
