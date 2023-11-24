@@ -5,9 +5,6 @@ From: python:3.7.4
     MAINTAINER Viraj Parikh virajypparikh@gmail.com
 
 %post
-    echo "Current directory: $(pwd)"
-    ls -l
-    ls -l DockerLab-Assignment3/mnist
     pip install --upgrade pip
     pip install -r DockerLab-Assignment3/mnist/requirements.txt
 
