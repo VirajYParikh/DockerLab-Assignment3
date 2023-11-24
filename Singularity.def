@@ -4,14 +4,11 @@ From: python:3.7.4
 %labels
     MAINTAINER Viraj Parikh virajypparikh@gmail.com
 
-%files
-    /mnist/main.py /main.py
-    /mnist/requirements.txt /requirements.txt
-
-
 %post
+    apt-get update && apt-get install -y git
+    git clone https://github.com/VirajYParikh/DockerLab-Assignment3.git /mnt/your-repo
     pip install --upgrade pip
-    pip install -r requirements.txt
+    pip install -r /mnt/your-repo/requirements.txt
 
 %runscript
-    python /main.py
+    python /mnt/your-repo/main.py
