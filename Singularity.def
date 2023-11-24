@@ -9,7 +9,7 @@ From: python:3.7.4
 
 %post
     pip install --upgrade pip
-    pip install -r /mnt/mnist/requirements.txt
+    pip install -r requirements.txt
 
 %runscript
-    python /mnt/mnist/main.py
+    python /main.py
