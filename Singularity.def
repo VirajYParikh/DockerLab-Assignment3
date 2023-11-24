@@ -9,4 +9,4 @@ From: python:3.7.4
     pip install -r DockerLab-Assignment3/mnist/requirements.txt
 
 %runscript
-    python DockerLab-Assignment3/mnist/main.py
+    python mnist/main.py
