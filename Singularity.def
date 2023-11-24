@@ -5,7 +5,9 @@ From: python:3.7.4
     MAINTAINER Viraj Parikh virajypparikh@gmail.com
 
 %files
-    mnist/
+    /mnist
+    /mnist /mnist
+
 
 %post
     pip install --upgrade pip
